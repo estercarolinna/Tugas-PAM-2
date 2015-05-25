@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jquery Sample</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile.js"></script>
+</head>
+<body>	
+	<div data-role="page" id="main">
+		<div data-role="header" data-position="fixed">
+			<a href="" data-icon="home">Home</a>
+			<h1>Info Binatang Langka di Indonesia</h1>
+			<a href="#secondPage" data-icon="info">About</a>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset= "true">
+				<li style="padding:2pt">
+					<a href=""> 
+						<img src="img/komodo.jpg"/>
+						<h4>Komodo</h4>
+						<p>Informasi Tentang Komodo</p>
+						<span class="ui-li-count">15</span>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href=""> 
+						<img src="img/cendrawasih.jpg"/>
+						<h4>Burung Cendrawasih</h4>
+						<p>Informasi Tentang Burung Cendrawasih</p>
+						<span class="ui-li-count">2</span>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href=""> 
+						<img src="img/badak.jpg"/>
+						<h4>Badak Bercula Satu</h4>
+						<p>Informasi Tentang Badak Bercula Satu</p>
+						<span class="ui-li-count">8</span>
+					</a>
+				</li>
+				<li style="padding:2pt">
+					<a href=""> 
+						<img src="img/orang.jpg"/>
+						<h4>Orang Hutan</h4>
+						<p>Informasi Tentang Orang Hutan</p>
+						<span class="ui-li-count">8</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">   
+			<h4>FTI &copy; 2015</h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="secondPage" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			 <a href="#" data-rel="back">Back</a>
+			<h1>About</h1>
+		</div>
+		<div data-role="content">
+			<p>
+				Ini halaman ke dua
+			</p>			
+		</div>
+		<div data-role="footer" data-position="fixed">   
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#main" data-icon="home" class="ui-btn-active">One</a></li>
+					<li><a href="#" data-icon="gear">Two</a></li>
+					<li><a href="#" data-icon="info">Three</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
